@@ -7,7 +7,7 @@
     <title>Spense</title>
 </head>
 <body>
-    <div>🎉 To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <span>You will be receiving 100% of the earnings.</span> 🎉</div>
+    <div class="fees-banner">🎉 To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <span>You will be receiving 100% of the earnings.</span> 🎉</div>
     <header class="header">
         <div class="header__logo">
             <p>spense.</p>
@@ -26,7 +26,7 @@
     </header>
     <section class="hero">
         <div class="hero__content">
-            <h1>Share your unfiltered thougths. Get paid.</h1>
+            <h1 class="heading">Share your unfiltered thougths. Get paid.</h1>
             <p>Spense is an open platform for individuals to share their unfiltered thougths. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
             <ul>
                 <li>Receive 99% off the earnings.</li>
@@ -36,14 +36,97 @@
             <input type="email" / placeholder="jhon@example.com">
             <a class="btn" href="#">Get Started</a>
         </div>
-        <picture>
-            <!-- <source />
-            <source />
-            <source />  Colocar mediaqueries here xd --> 
-            <img class="hero__image" src="/assets/Hero Image (Desktop).png" alt="">
-        </picture>
+        <figure>
+            <picture>
+                <!-- <source />
+                <source />
+                <source />  Colocar mediaqueries here xd --> 
+                <img class="hero__image" src="/assets/hero-image-desktop.png" alt="">
+            </picture>
+        </figure>
     </section>
-    <main>
+    <main class="main">
+        <div class="main__social-media">
+            <ul>
+                <li>
+                    <img src="/assets/facebook-logo.png" alt="">
+                </li>
+                <li>
+                    <img src="/assets/dribbble-logo.png" alt="">
+                </li>
+                <li>
+                    <img src="/assets/youtube-logo.png" alt="">
+                </li>
+                <li>
+                    <img src="/assets/pinterest-logo.png" alt="">
+                </li>
+                <li>
+                    <img src="/assets/twitter-logo.png" alt="">
+                </li>
+                <li>
+                    <img src="/assets/reddit-logo.png" alt="">
+                </li>
+                <li>
+                    <img src="/assets/google-logo.png" alt="">
+                </li>
+                <li>
+                    <img src="/assets/slack-logo.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="main__wrapper">
+            <div class="main__escrow">
+                <h3 class="subtitle">Secure your money with Escrow.</h3>
+                <p class="paragraph">Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</p>
+                <a class="main__link" href="#">Learn more about Escrow. →</a>
+            </div>
+            <figure>
+                <picture>
+                    <!-- <source>
+                    <source>
+                    <source> -->
+                    <img class="main__phone-image" src="/assets/phone-mockup-desktop.png" alt="">
+                </picture>
+            </figure>
+        </div>
+        <div class="main__wrapper--bg-white">
+            <figure>
+                <img class="main__text-editor-image" src="/assets/text-editor.png" alt="">
+            </figure>
+            <div class="main__escrow">
+                <h3 class="subtitle">A text editor like no other.</h3>
+                <p class="paragraph">Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
+                <a class="main__link" href="#">Text editor live demo →</a>
+            </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="footer__brand-description">
+            <p>spense.</p>
+            <p class="paragraph--white">Spense is an open platform for individuals to share their unfiltered thougths. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
+        </div>
+        <nav class="footer__about">
+            <ul class="footer__item">
+                <li><p class="footer__title">Sitemap</p></li>
+                <li><a class="footer__link" href="">Homepage</a></li>
+            </ul>
+            <ul class="footer__item">
+                <li><p class="footer__title">Resources</p></li>
+                <li><a class="footer__link" href="">Support</a></li>
+                <li><a class="footer__link" href="">Contact</a></li>
+                <li><a class="footer__link" href="">FAQ</a></li>
+            </ul>
+            <ul class="footer__item">
+                <li><p class="footer__title">Company</p></li>
+                <li><a class="footer__link" href="">About</a></li>
+                <li><a class="footer__link" href="">Costumers</a></li>
+                <li><a class="footer__link" href="">Blog</a></li>
+            </ul>
+            <ul class="footer__item">
+                <li><p class="footer__title">Opportunities</p></li>
+                <li><a class="footer__link" href="">Jobs</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

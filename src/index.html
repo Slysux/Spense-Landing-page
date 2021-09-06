@@ -5,46 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
-    <div class="fees-banner">🎉 To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <span>You will be receiving 100% of the earnings.</span> 🎉</div>
-    <header class="header">
-        <div class="header__logo">
-            <p>spense.</p>
+    <div class="fees-banner">
+        <div class="container">
+            <p>🎉 To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <a href="#">You will be receiving 100% of the earnings.</a> 🎉</p>
         </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Features</a></li>
-            </ul>
-        </nav>
-        <div class="header__session">
-            <a href="#">Login</a>
-            <a class="btn" href="#">Get Started</a>
+    </div>
+    <header class="header">
+        <div class="container">
+            <section class="header-content">
+                <div class="header-content__logo">
+                    <p>spense.</p>
+                </div>
+                <nav class="header-content__links">
+                    <ul>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+                </nav>
+                <div class="header-content__buttons">
+                    <a href="#">Login</a>
+                    <a class="btn" href="#">Get Started</a>
+                </div>
+            </section>
+            <section class="hero">
+                <div class="hero__content">
+                    <h1 class="heading">Share your unfiltered thougths. Get paid.</h1>
+                    <p>Spense is an open platform for individuals to share their unfiltered thougths. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
+                    <ul>
+                        <li>Receive 99% off the earnings.</li>
+                        <li>Get paid via Debit Card, ACH, or Paypal.</li>
+                        <li>Withdraw your earnings anytime.</li>
+                    </ul>
+                    <input type="email" placeholder="jhon@example.com">
+                    <a class="btn" href="#">Get Started</a>
+                </div>
+                <figure>
+                    <picture>
+                        <!-- <source />
+                        <source />
+                        <source />  Colocar mediaqueries here xd --> 
+                        <img class="hero__image" src="/assets/hero-image-desktop.png" alt="">
+                    </picture>
+                </figure>
+            </section>
         </div>
     </header>
-    <section class="hero">
-        <div class="hero__content">
-            <h1 class="heading">Share your unfiltered thougths. Get paid.</h1>
-            <p>Spense is an open platform for individuals to share their unfiltered thougths. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
-            <ul>
-                <li>Receive 99% off the earnings.</li>
-                <li>Get paid via Debit Card, ACH, or Paypal.</li>
-                <li>Withdraw your earnings anytime.</li>
-            </ul>
-            <input type="email" / placeholder="jhon@example.com">
-            <a class="btn" href="#">Get Started</a>
-        </div>
-        <figure>
-            <picture>
-                <!-- <source />
-                <source />
-                <source />  Colocar mediaqueries here xd --> 
-                <img class="hero__image" src="/assets/hero-image-desktop.png" alt="">
-            </picture>
-        </figure>
-    </section>
     <main class="main">
         <div class="main__social-media">
             <ul>

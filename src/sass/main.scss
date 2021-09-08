@@ -16,6 +16,10 @@ html {
     font-size: 62.5%;
 }
 
+ul {
+    list-style: none;
+}
+
 .fees-banner {
     display: grid;
     place-items: center;
@@ -39,6 +43,10 @@ html {
 
 .heading {
     font-size: clamp(4rem, 5vw, 7rem);
+}
+
+.subtitle {
+    font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .paragraph {
@@ -93,7 +101,6 @@ html {
         ul {
             display: flex;
             justify-content: space-evenly;
-            list-style: none;
         }
         a {
             font-size: 1.6rem;
@@ -138,7 +145,6 @@ html {
         width: 100%;
     }
     &__list {
-        list-style: none;
         display: flex;
         flex-direction: column;
         row-gap: 10px;
@@ -167,5 +173,42 @@ html {
         width: 100%;
         max-height: 62vh;
         object-fit: cover;
+    }
+}
+
+.main {
+    width: 100%;
+    &__social-media {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    &__social-icon {
+        max-width: 100px;
+        width: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        padding: 20px 50px;
+        position: relative;
+        // height: 100%;
+        // width: 100%;
+        
+        // background-image: url('assets/phone-mockup-desktop.png');
+        background-color: var(--primary);
+    }
+    &__escrow {
+        
+    }
+    &__phone-image {
+        // position: absolute;
+        // right: 0;
+        // background-image: url('../assets/phone-mockup-desktop.png');
+        // background-position: right center;
+        // background-repeat: no-repeat;
+        height: 500px;
+        width: 50%;
     }
 }

@@ -17,6 +17,10 @@ html {
   font-size: 62.5%;
 }
 
+ul {
+  list-style: none;
+}
+
 .fees-banner {
   display: -ms-grid;
   display: grid;
@@ -42,6 +46,10 @@ html {
 
 .heading {
   font-size: clamp(4rem, 5vw, 7rem);
+}
+
+.subtitle {
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .paragraph {
@@ -121,7 +129,6 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  list-style: none;
 }
 
 .header-content__links a {
@@ -185,7 +192,6 @@ html {
 }
 
 .hero__list {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,5 +236,43 @@ html {
   max-height: 62vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main {
+  width: 100%;
+}
+
+.main__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.main__social-icon {
+  max-width: 100px;
+  width: 100%;
+}
+
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 50px;
+  position: relative;
+  background-color: var(--primary);
+}
+
+.main__phone-image {
+  height: 500px;
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */

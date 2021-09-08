@@ -2,6 +2,7 @@
     --black: #000;
     --white: #FFF;
     --primary: #F0EEEB;
+    --secundary: #5A5444;
 }
 
 * {
@@ -32,7 +33,42 @@ html {
 }
 
 .container {
-    margin: 0 10%;
+    margin: 0 10vw;
+    height: 100%;
+}
+
+.heading {
+    font-size: clamp(4rem, 5vw, 7rem);
+}
+
+.paragraph {
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    color: var(--secundary);
+}
+
+.input {
+    border: 1px solid #5A544488;    
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 15px 20px;
+}
+
+.input::placeholder {
+    color: #5A544488;
+}
+
+.btn {
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .header {
@@ -45,7 +81,8 @@ html {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    height: 10%;
     &__logo {
         font-size: 2rem;
         font-weight: bold;
@@ -81,11 +118,54 @@ html {
     }
 }
 
-.btn {
-    border-radius: 5px;
-    font-size: 1.6rem;
-    padding: 15px 20px;
-    text-decoration: none;
-    background-color: var(--black);
-    color: var(--white);
+.hero {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    // justify-items: end;
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+    height: 80%;
+    &__content {
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 30px;
+        max-width: 800px;
+        height: 100%;
+        width: 100%;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        li {
+            display: inherit;
+            align-items: center;
+            column-gap: 20px;
+            i {
+                height: 2.5rem;
+                width: 2.5rem;
+                background-image: url('/src/assets/checkmark.svg');
+                background-size: cover;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        column-gap: 20px;
+    }
+    &__image {
+        // max-width: 500px;
+        min-width: 250px;
+        width: 100%;
+        max-height: 62vh;
+        object-fit: cover;
+    }
 }

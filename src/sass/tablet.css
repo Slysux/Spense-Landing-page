@@ -1,0 +1,37 @@
+.container {
+  margin: 0 5vw;
+}
+
+.header {
+  height: auto;
+}
+
+.hero {
+  -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.hero__content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
+.hero__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  height: 100%;
+}
+
+.hero figure, .hero figure picture {
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  width: 100%;
+}
+/*# sourceMappingURL=tablet.css.map */

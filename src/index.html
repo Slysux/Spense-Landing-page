@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./sass/tablet.css" media="(max-width: 901px)">
 </head>
 <body>
     <div class="fees-banner">
@@ -48,10 +49,9 @@
                 </div>
                 <figure>
                     <picture>
-                        <!-- <source />
-                        <source />
-                        <source />  Colocar mediaqueries here xd --> 
-                        <img class="hero__image" src="/src/assets/hero-image-desktop.png" alt="">
+                        <!-- <source /> -->
+                        <source srcset="/src/assets/hero-image-tablet.png" media="(max-width: 900px)">
+                        <img class="hero__image" src="/src/assets/hero-image-desktop.png" alt="" />
                     </picture>
                 </figure>
             </section>
@@ -96,9 +96,8 @@
                 <!-- </div> -->
                 <figure  class="main__image-container">
                     <picture>
-                        <!-- <source>
-                        <source>
-                        <source> -->
+                        <!-- <source> -->
+                        <source srcset="assets/phone-mockup-tablet.png" media="(max-width: 950px)">
                         <img class="main__image" src="assets/phone-mockup-desktop.png" alt="">
                     </picture>
                 </figure>

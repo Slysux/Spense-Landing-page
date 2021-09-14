@@ -1,0 +1,32 @@
+.container {
+    margin: 0 5vw;
+}
+.header {
+    height: auto;
+}
+
+.hero {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    // grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
+    &__content {
+        order: 1;
+        justify-content: initial;
+    }
+    &__image {
+        object-fit: cover;
+        object-position: left;
+        // max-height: 500px;
+        height: 100%;
+    }
+    figure {
+        justify-content: initial;
+        width: 100%;
+        picture {
+            @extend figure;
+        }
+    }
+}
+
+// .main {
+
+// }

@@ -42,7 +42,7 @@ ul {
 }
 
 .heading {
-    font-size: clamp(5rem, 5vw, 7rem);
+    font-size: clamp(4.4rem, 4.5vw, 6rem);
 }
 
 .subtitle {
@@ -141,10 +141,10 @@ ul {
 
 .hero {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
-    column-gap: 50px;
+    gap: 50px;
     height: 80%;
     &__content {
         display: flex;
@@ -182,6 +182,7 @@ ul {
         width: 100%;
         max-height: 100%;
         object-fit: contain;
+        border-radius: 12px;
     }
     figure {
         display: flex;
@@ -198,13 +199,15 @@ ul {
     width: 100%;
     &__social-media {
         display: flex;
-        column-gap: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
         align-items: center;
         justify-content: space-between;
         padding: 50px 0;
     }
     &__social-icon {
         max-width: 100px;
+        min-width: 50px;
         width: 100%;
     }
     &__wrapper {
@@ -214,7 +217,7 @@ ul {
         column-gap: 50px;
         border-radius: 10px;
         place-items: center;
-        padding: 0 5%;
+        padding: 0 7%;
         margin-bottom: 50px;
         background-color: var(--primary);
         &--bg-white {
@@ -247,7 +250,7 @@ ul {
 }
 
 .footer {
-    height: 25vh;
+    // height: 25vh;
     background-color: var(--black);
     padding: 50px 0;
     &__container {

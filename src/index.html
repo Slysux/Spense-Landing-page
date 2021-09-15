@@ -21,6 +21,21 @@
         <div class="container">
             <section class="header-content">
                 <p class="logo">spense.</p>
+                <div class="header-content__mobile">
+                    <input class="header-content__mobile__menu-button" type="checkbox"/>
+                    <img src="assets/hamburger-menu.svg" alt="hamburger menu">
+                    <nav class="header-content__mobile__links">
+                        <ul>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Features</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-content__mobile__buttons">
+                        <a href="#">Login</a>
+                        <a class="btn" href="#">Get Started</a>
+                    </div>
+                </div>
                 <nav class="header-content__links">
                     <ul>
                         <li><a href="#">Business</a></li>
@@ -49,7 +64,7 @@
                 </div>
                 <figure>
                     <picture>
-                        <!-- <source /> -->
+                        <source srcset="/src/assets/hero-image-mobile.png" media="(max-width: 480px)"/>
                         <source srcset="/src/assets/hero-image-tablet.png" media="(max-width: 768px)">
                         <img class="hero__image" src="/src/assets/hero-image-desktop.png" alt="" />
                     </picture>
@@ -96,8 +111,8 @@
                 <!-- </div> -->
                 <figure  class="main__image-container">
                     <picture>
-                        <!-- <source> -->
-                        <source srcset="assets/phone-mockup-tablet.png" media="(max-width: 899px)">
+                        <source srcset="assets/phone-mockup-mobile.png" media="(max-width: 480px)">
+                        <source srcset="assets/phone-mockup-tablet.png" media="(max-width: 768px)">
                         <img class="main__image" src="assets/phone-mockup-desktop.png" alt="">
                     </picture>
                 </figure>

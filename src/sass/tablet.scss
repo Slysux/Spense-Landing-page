@@ -1,12 +1,60 @@
 .container {
-    margin: 0 5vw;
+    max-width: 768px;
 }
+
+// .input,
+// .btn {
+//     font-size: 1.4rem;
+// }
+
 .header {
     height: auto;
 }
+.header-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &__links,
+    &__buttons {
+        display: none;
+    }
+    &__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;  
+        &__menu-button {
+            width: 24px;
+            height: 20px;
+            position: absolute;
+            appearance: none;
+            &:checked ~ nav,
+            &:checked ~ div {
+                opacity: 1;
+                display: flex;
+                transition: all 1s ;
+            }
+            &:checked ~ nav {
+                ul {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                
+            }
+        }
+        img {
+            width: 24px;
+            height: 20px;
+        }
+        &__links, 
+        &__buttons {
+            display: none;
+        }
+    }
+}
 
 .hero {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
     grid-template-rows: repeat(auto-fit, minmax(auto, 100%));
     &__content {
         order: 1;
@@ -15,7 +63,6 @@
     &__image {
         object-fit: cover;
         object-position: left;
-        // max-height: 500px;
         height: 100%;
     }
     figure {
@@ -30,9 +77,10 @@
 .main {
     &__wrapper {
         @extend .main__wrapper--bg-white;
-        grid-template-columns: repeat(1, minmax(auto, 480px));
-        justify-content: center;
+        // grid-template-columns: repeat(1, minmax(auto, 480px));
         &--bg-white {
+            grid-template-columns: repeat(1, minmax(auto, 480px));
+            justify-content: center;
             grid-template-rows: repeat(auto-fit, minmax(200px, 300px));
         }
     }

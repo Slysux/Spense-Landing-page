@@ -37,16 +37,18 @@ ul {
 }
 
 .container {
-    margin: 0 10vw;
+    margin: 0 auto;
+    padding: 0 30px;
     height: 100%;
+    max-width: 1440px;
 }
 
 .heading {
-    font-size: clamp(4.4rem, 4.5vw, 6rem);
+    font-size: clamp(3rem, 5vw, 6rem);
 }
 
 .subtitle {
-    font-size: clamp(3.6rem, 3.6vw, 4.8rem);
+    font-size: clamp(2.8rem, 4vw, 4.8rem);
 }
 
 .paragraph {
@@ -68,6 +70,8 @@ ul {
     font-family: inherit;
     font-size: 1.6rem;
     padding: 15px 20px;
+    width: 100%;
+    max-width: max-content;
 }
 
 .input::placeholder {
@@ -85,6 +89,8 @@ ul {
     text-decoration: none;
     background-color: var(--black);
     color: var(--white);
+    width: 100%;
+    max-width: max-content;
 }
 
 .logo {
@@ -135,6 +141,17 @@ ul {
         }
         .btn {
             color: var(--white);
+        }
+    }
+    &__mobile {
+        display: none;
+        &__links {
+            @extend .header-content__links;
+            opacity: 0;
+        }
+        &__buttons {
+            @extend .header-content__buttons;
+            opacity: 0;
         }
     }
 }
@@ -260,12 +277,6 @@ ul {
         grid-template-columns: 1fr 3fr;
         gap: 50px;
     }
-    // &__brand-description {
-    //     display: flex;
-    //     flex-direction: column;
-    //     row-gap: 20px;
-    //     min-width: 200px;
-    // }
     &__about {
         display: flex;
         justify-content: space-between;

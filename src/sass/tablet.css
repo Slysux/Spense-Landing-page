@@ -1,14 +1,80 @@
 .container {
-  margin: 0 5vw;
+  max-width: 768px;
 }
 
 .header {
   height: auto;
 }
 
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-content__links, .header-content__buttons {
+  display: none;
+}
+
+.header-content__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 20px;
+}
+
+.header-content__mobile__menu-button {
+  width: 24px;
+  height: 20px;
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.header-content__mobile__menu-button:checked ~ nav,
+.header-content__mobile__menu-button:checked ~ div {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.header-content__mobile__menu-button:checked ~ nav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.header-content__mobile img {
+  width: 24px;
+  height: 20px;
+}
+
+.header-content__mobile__links, .header-content__mobile__buttons {
+  display: none;
+}
+
 .hero {
-  -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  -ms-grid-columns: (minmax(auto, 100%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
   -ms-grid-rows: (minmax(auto, 100%))[auto-fit];
       grid-template-rows: repeat(auto-fit, minmax(auto, 100%));
 }
@@ -37,15 +103,12 @@
   width: 100%;
 }
 
-.main__wrapper {
+.main__wrapper--bg-white, .main__wrapper {
   -ms-grid-columns: (minmax(auto, 480px))[1];
       grid-template-columns: repeat(1, minmax(auto, 480px));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.main__wrapper--bg-white, .main__wrapper {
   -ms-grid-rows: (minmax(200px, 300px))[auto-fit];
       grid-template-rows: repeat(auto-fit, minmax(200px, 300px));
 }

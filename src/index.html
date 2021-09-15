@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.css">
-    <link rel="stylesheet" href="./sass/tablet.css" media="(max-width: 901px)">
+    <link rel="stylesheet" href="./sass/tablet.css" media="(max-width: 768px)">
 </head>
 <body>
     <div class="fees-banner">
@@ -50,7 +50,7 @@
                 <figure>
                     <picture>
                         <!-- <source /> -->
-                        <source srcset="/src/assets/hero-image-tablet.png" media="(max-width: 900px)">
+                        <source srcset="/src/assets/hero-image-tablet.png" media="(max-width: 768px)">
                         <img class="hero__image" src="/src/assets/hero-image-desktop.png" alt="" />
                     </picture>
                 </figure>
@@ -97,13 +97,13 @@
                 <figure  class="main__image-container">
                     <picture>
                         <!-- <source> -->
-                        <source srcset="assets/phone-mockup-tablet.png" media="(max-width: 950px)">
+                        <source srcset="assets/phone-mockup-tablet.png" media="(max-width: 899px)">
                         <img class="main__image" src="assets/phone-mockup-desktop.png" alt="">
                     </picture>
                 </figure>
             </div>
             <div class="main__wrapper--bg-white">
-                <figure>
+                <figure class="main__image-container">
                     <img class="main__image" src="assets/text-editor.png" alt="">
                 </figure>
                 <div class="main__content">
@@ -115,12 +115,13 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="footer__container container">
-            <div class="footer__brand-description">
-                <p class="logo--white">spense.</p>
-                <p class="paragraph--footer">Spense is an open platform for individuals to share their unfiltered thougths. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
-            </div>
+        <div class="container">
+
             <nav class="footer__about">
+                <ul class="footer__item">
+                    <li><p class="logo--white">spense.</p></li>
+                    <li><p class="paragraph--footer">Spense is an open platform for individuals to share their unfiltered thougths. Discuss the topics you love, and get paid for doing <i>just</i> that.</p></li>
+                </ul>
                 <ul class="footer__item">
                     <li><p class="footer__title">Sitemap</p></li>
                     <li><a class="footer__link" href="">Homepage</a></li>
@@ -143,6 +144,12 @@
                 </ul>
             </nav>
         </div>
+        <!-- <div class="footer__container container"> -->
+            <!-- <div class="footer__brand-description">
+                <p class="logo--white">spense.</p>
+                <p class="paragraph--footer">Spense is an open platform for individuals to share their unfiltered thougths. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
+            </div> -->
+        <!-- </div> -->
     </footer>
 </body>
 </html>

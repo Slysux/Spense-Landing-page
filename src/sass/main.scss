@@ -304,3 +304,9 @@ ul {
         text-decoration: none;
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1096px;
+    }
+}

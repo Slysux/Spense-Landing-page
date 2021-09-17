@@ -1,0 +1,16 @@
+.hero__list li {
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.hero__list li i {
+  height: 1.5rem;
+  width: 1.5rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+}
+
+.footer__item:first-child {
+  min-width: 0;
+}
+/*# sourceMappingURL=mobile.css.map */

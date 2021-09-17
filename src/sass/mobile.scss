@@ -1,0 +1,21 @@
+.hero {
+    &__list {
+        li {
+            column-gap: 10px;
+            i {
+                height: 1.5rem;
+                width: 1.5rem;
+                min-height: 1.5rem;
+                min-width: 1.5rem
+            }
+        }
+    }
+}
+
+.footer {
+    &__item {
+        &:first-child {
+            min-width: 0;
+        }
+    }
+}
